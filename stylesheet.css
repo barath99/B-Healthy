@@ -1,0 +1,249 @@
+body{
+  background-color:#eeeeee;
+}
+
+.firstInfo{
+  margin: auto 30px;
+}
+
+
+#logo{
+  width:80px;
+  height:auto;
+  margin: 0;
+}
+
+h1{
+  font-family: 'Kaushan Script', cursive;
+  color: #49beb7;
+  margin: 0;
+  font-size: 2em;
+  padding: 0;
+}
+
+h2{
+  font-family: 'Ubuntu', sans-serif;
+  color: #226b80;
+  font-size: 1.5em;
+}
+
+h3{
+  font-family: 'Ubuntu', sans-serif;
+  color: #226b80;
+  font-size: 1.25em;
+}
+
+.form-drop{
+  width:380px;
+  background-color: #40a798;
+  margin-top:4px;
+  border-radius: 30px;
+  padding-top:10px;
+  padding-bottom:10px;
+  box-shadow: 0 10px 6px -6px #777;
+  margin-bottom: 10px;
+}
+
+.form-drop1{
+  width:380px;
+  background-color: #5893d4;
+  margin-top:20px;
+  border-radius: 30px;
+  padding-top:10px;
+  padding-bottom:10px;
+  box-shadow: 0 10px 6px -6px #777;
+  margin-bottom: 30px;
+}
+
+.form-drop2{
+  width:380px;
+  background-color: #ffffff;
+  margin-top:20px;
+  border-radius: 30px;
+  padding-top:10px;
+  padding-bottom:10px;
+  box-shadow: 0 10px 6px -6px #777;
+  margin-bottom: 10px;
+  border: 1px;
+}
+
+li{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.8em;
+  color: #5893d4;
+  position: relative;
+  right:15px;
+}
+
+.set{
+  margin:15px;
+}
+
+label{
+  font-family: 'Ubuntu', sans-serif;
+  color: #f6f5f5;
+}
+
+.input1 {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  width: 95%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  box-shadow: 0 4px 2px -3px #777;
+}
+
+.btn{
+  border-color: #00bd56;
+  color: #00bd56;
+  background-color: transparent;
+  border-style: solid;
+  padding: 6px 17px 6px 17px;
+  border-radius: 5px;
+  outline: none;
+  margin:auto auto;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.btn:hover{
+  background-color: #00bd56;
+  font-family: 'Ubuntu', sans-serif;
+  color: #ffffff;
+  border-radius: 5px;
+  transition-duration: 1s;
+  outline: none;
+}
+
+.btn:active{
+  position: relative;
+  top:2px;
+  outline: none;
+}
+
+.head-logo{
+  position: fixed;
+  width:100%;
+  background-color: #dedede;
+  margin: 0;
+}
+
+.radio{
+  width:10%;
+  box-shadow: none;
+
+}
+
+#font1{
+  font-family: 'Ubuntu', sans-serif;
+  padding: 20px;
+  width:300px;
+}
+
+
+  @media only screen and (max-width: 300px) {
+    .header{
+      padding:0;
+  }
+  #wel-text{
+    padding:0;
+  }
+}
+
+@media only screen and (max-width: 1930px) and (min-width: 600px) {
+.header{
+  padding: 10px 100px;
+  }
+  #wel-text{
+    padding: 10px 100px;
+    margin-top:20px;
+  }
+}
+
+#but2{
+  display: none;
+  margin-bottom: 15px;
+}
+
+#wel-text{
+  margin:0;
+  padding:10px;
+}
+
+#list-food{
+  display:none;
+}
+
+#form2{
+  display:none;
+  width:fit-content;
+  border-radius: 10px;
+  box-shadow: 0 4px 1px -3px #777;
+}
+
+#form3{
+  display:none;
+}
+
+#cal{
+  color:#f3f9fb;
+  margin: auto 20px;
+}
+
+#bluebtn{
+  margin: 25px auto 10px;
+  border-color: #0900c3;
+  color: #0900c3;
+  display: none;
+}
+
+#bluebtn:hover{
+  background-color: #0900c3;
+  color: #ffffff;
+}
+
+#cent-corr{
+  position: relative;
+  right:15px;
+}
+
+
+#targetCal{
+  border-color: #00bd56;
+  color: #00bd56;
+  background-color: transparent;
+  border-style: solid;
+  padding: 6px 17px 6px 17px;
+  border-radius: 5px;
+  outline: none;
+  margin:20px auto 15px;
+  font-family: 'Ubuntu', sans-serif;
+}
+input[id="targetCal"]::placeholder {
+  text-align: center;
+}
+
+#redbtn{
+  margin: 25px auto 10px;
+  border-color: #e41749;
+  color: #e41749;
+  display: none;
+}
+
+#redbtn:hover{
+  background-color: #e41749;
+  color: #ffffff;
+}
+
+#clock{
+  font-family: 'Ubuntu', sans-serif;
+  width:fit-content;
+  background-color: #5893d4;
+  margin-top:20px;
+  border-radius: 30px;
+  padding: 10px 20px 10px;
+  box-shadow: 0 10px 6px -6px #777;
+  margin-bottom: 20px;
+  display: none;
+  color:#ffffff;
+}

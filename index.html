@@ -1,0 +1,118 @@
+
+  <html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <link rel="stylesheet" href="stylesheet.css">
+      <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Ubuntu&display=swap" rel="stylesheet">
+      <title>Be Healthy - Home</title>
+
+  </head>
+  <body onload="startTime()">
+      <center><img id="logo" src="logo.png" alt=""></center>
+          <center><h1 id="Intro-text">Welcome to B ~ Healthy!</h1></CENTER>
+            <section class="SecondInfo">
+              <div>
+                  <center>
+                          <h2 id="head-text" class="header">Track your calorie consumption for each day. Maintain your health!</h2>
+                  </center>
+              </div>
+            </section>
+
+      <section class="firstInfo">
+        <center>
+          <div class="form-drop" id="form1">
+            <form id="form0">
+              <div class="set">
+                <label>Name</label>
+                <input type="text" class="login input1" id="Name" required><br />
+              </div>
+              <div class="set">
+                <label>Age (Yrs)</label>
+                <input type="number" class="login input1" id="age" required><br />
+              </div>
+              <div class="set">
+                <label>Height (cm)</label>
+                <input type="number" class="login input1" id="height" required ><br />
+              </div>
+              <div class="set">
+                <label>Weight (Kg)</label>
+                <input type="number" class="login input1" id="Weight" required>
+              </div>
+            </div>
+              <div id="font1"><center>
+              Male<input type="radio" class="radio" id="male" name="Gender" value="Male">
+              Female<input type="radio" class="radio" id="female" name="Gender" value="Female">
+              </center>
+            </div>
+           <button id="but1" type="button" onclick="save()" class="btn" >Proceed</button>
+          </form>
+       </center>
+      </section>
+
+    <section id="detailObtained">
+    <center><div id="User-Image"></div></center>
+    <center>
+      <h3 id="wel-text"></h3>
+      <div>
+      <center>
+      <input id="targetCal" placeholder="Enter Target (in Kcal)"  style="display:none"/>
+      </center>
+        <button id="but2" class="btn" type="button" onclick="DailyDiet()">Set Target & Proceed</button>
+      </div>
+    </center>
+    </section>
+
+    <center>
+      <div id="form2" class="form-drop1" class="header">
+      <h2 id="cal"></h2>
+      </div>
+
+      <div class="row">
+        <div class="column left" >
+
+          <div >
+            <div id="form3" class="form-drop1" class="header">
+            <div class="set">
+              <label>Food Name</label>
+            <input type="text" id="food" class="input1" placeholder="Food Name"><br />
+            </div>
+
+            <div class="set">
+              <label>Carbs (gms)</label>
+            <input type="number" id="carb" class="input1" placeholder="Carbs"><br />
+            </div>
+
+            <div class="set">
+              <label>Fat (gms)</label>
+            <input type="number" id="fat" class="input1" placeholder="Fat"><br />
+            </div>
+
+            <div class="set">
+              <label>Proteins (gms)</label>
+            <input type="number" id="protein" class="input1" placeholder="Proteins">
+            </div>
+            </div>
+            <button onclick="addintake()" id="bluebtn" class="btn" type="button">Add to Consumed</button>
+          </div>
+
+        </div>
+
+        <div class="column right" >
+        <center>
+          <ul id="list-food" class="form-drop2" style="list-style: none;">
+            <h2 id="cent-corr"> Today's Food Intake</h2>
+          </ul>
+        </center>
+        </div>
+      </div>
+      <center>
+        <div id="clock"></div>
+      </center>
+      <center>
+        <button onclick="logout()" id="redbtn" class="btn" type="button">Logout</button>
+      </center>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
