@@ -148,7 +148,7 @@ function startTime() {
     t = setTimeout(startTime, 500);
   }
   else{
-    document.getElementById('txt').innerHTML =
+    document.getElementById('clock').innerHTML =
     h + ":" + m + ":" + s+ " AM";
     t = setTimeout(startTime, 500);
   }
