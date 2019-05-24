@@ -1,6 +1,10 @@
  if(localStorage.getItem("Name")!==null) {
    var selfclicker = document.getElementById("but1");
    selfclicker.click();
+   if(localStorage.getItem("Target")!==null){
+     var selfclicker1 = document.getElementById("but2");
+     selfclicker1.click();
+   }
  }
 
 function bmrcal() {
@@ -69,7 +73,12 @@ function save()
 
 function DailyDiet(){
 
+  if(localStorage.getItem("ConsumedCal")===null)
   cal=0;
+  else
+  cal=parseFloat(localStorage.getItem("ConsumedCal"));
+  if(localStorage.getItem("Target")===null)
+  {
   targetCal=document.getElementById('targetCal').value;
     if (targetCal === '') {
       alert("Set the Target to continue..");
@@ -95,16 +104,43 @@ function DailyDiet(){
       //Have to Add function to increment cal consumed..
     document.getElementById('cal').innerHTML="Your Calorie Intake till now is : "+cal+" KCal / "+targetCal+" KCal";
       }
+    }
+    else
+    {
+      targetCal=localStorage.getItem("Target");
+
+      document.getElementById('wel-text').style.display='none';
+      document.getElementById('User-Image').style.display='none';
+      document.getElementById('head-text').style.display='none';
+      document.getElementById('but2').style.display='none';
+      document.getElementById('targetCal').style.display='none';
+      document.getElementById('Intro-text').innerHTML="Dashboard";
+      document.getElementById('Intro-text').style.color="#0900c3";
+      document.getElementById('list-food').style.display="block";
+      document.getElementById('form2').style.display="block";
+      document.getElementById('form3').style.display="block";
+      document.getElementById('bluebtn').style.display="block";
+      document.getElementById('redbtn').style.display="block";
+      document.getElementById('clock').style.display="block";
+
+      document.getElementById('cal').innerHTML="Your Calorie Intake till now is : "+cal+" KCal / "+targetCal+" KCal";
+    }
 }
 
 function addintake(){
+  if(localStorage.getItem("ConsumedCal")===null)
+  cal=0;
+  else
+  cal=parseFloat(localStorage.getItem("ConsumedCal"));
+
   food=document.getElementById("food").value;
   carb=document.getElementById("carb").value;
   fat=document.getElementById("fat").value;
   protein=document.getElementById("protein").value;
 
   var calo= 4*carb + 4*protein + 9*fat;
-  cal+=calo/1000;
+  cal=cal+(calo/1000);
+  localStorage.setItem("ConsumedCal",cal);
   document.getElementById('cal').innerHTML="Your Calorie Intake till now is : "+cal+" KCal / "+targetCal+" KCal";
   if(cal>targetCal)
   alert("You have crossed your calorie limit for today!!!");
@@ -120,10 +156,16 @@ function addintake(){
     document.getElementById("list-food").appendChild(li);
   }
 
+
+
   document.getElementById("food").value = "";
   document.getElementById("carb").value = "";
   document.getElementById("fat").value = "";
   document.getElementById("protein").value = "";
+
+
+
+
 
 }
 
@@ -153,8 +195,8 @@ function startTime() {
     t = setTimeout(startTime, 500);
   }
 
-  if(s=="00")
-  alert("You should drink 0.125 L within this hour!");
+  //if (s=="00")
+//  alert("You should drink 0.125 L within this hour!");
 }
 function checkTime(i) {
   if (i < 10) {i = "0" + i;}  // add zero in front of numbers < 10
