@@ -153,7 +153,7 @@ function startTime() {
     t = setTimeout(startTime, 500);
   }
 
-  if(m=="00" && s=="00")
+  if(s=="00")
   alert("You should drink 0.125 L within this hour!");
 }
 function checkTime(i) {
