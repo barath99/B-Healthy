@@ -33,39 +33,7 @@ h3{
   font-size: 1.25em;
 }
 
-.form-drop{
-  width:380px;
-  background-color: #40a798;
-  margin-top:4px;
-  border-radius: 30px;
-  padding-top:10px;
-  padding-bottom:10px;
-  box-shadow: 0 10px 6px -6px #777;
-  margin-bottom: 10px;
-}
 
-.form-drop1{
-  width:380px;
-  background-color: #5893d4;
-  margin-top:20px;
-  border-radius: 30px;
-  padding-top:10px;
-  padding-bottom:10px;
-  box-shadow: 0 10px 6px -6px #777;
-  margin-bottom: 30px;
-}
-
-.form-drop2{
-  width:380px;
-  background-color: #ffffff;
-  margin-top:20px;
-  border-radius: 30px;
-  padding-top:10px;
-  padding-bottom:10px;
-  box-shadow: 0 10px 6px -6px #777;
-  margin-bottom: 10px;
-  border: 1px;
-}
 
 li{
   font-family: 'Ubuntu', sans-serif;
@@ -141,23 +109,94 @@ label{
 }
 
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 422px) {
     .header{
+
       padding:0;
   }
   #wel-text{
     padding:0;
   }
+.form-drop{
+  width-max:380px;
+  width:90%;
+  background-color: #40a798;
+  margin-top:4px;
+  border-radius: 30px;
+  padding-top:10px;
+  padding-bottom:10px;
+  box-shadow: 0 10px 6px -6px #777;
+  margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 1930px) and (min-width: 600px) {
+.form-drop1{
+  width:90%;
+  background-color: #5893d4;
+  margin-top:20px;
+  border-radius: 30px;
+  padding-top:10px;
+  padding-bottom:10px;
+  box-shadow: 0 10px 6px -6px #777;
+  margin-bottom: 30px;
+}
+
+.form-drop2{
+  width:90%;
+  background-color: #ffffff;
+  margin-top:20px;
+  border-radius: 30px;
+  padding-top:10px;
+  padding-bottom:10px;
+  box-shadow: 0 10px 6px -6px #777;
+  margin-bottom: 10px;
+  border: 1px;
+}
+
+}
+
+@media only screen and (max-width: 1930px) and (min-width: 422px) {
 .header{
-  padding: 10px 100px;
+  padding: 10px 40px;
   }
   #wel-text{
     padding: 10px 100px;
     margin-top:20px;
   }
+
+  .form-drop{
+  width:380px;
+  background-color: #40a798;
+  margin-top:4px;
+  border-radius: 30px;
+  padding-top:10px;
+  padding-bottom:10px;
+  box-shadow: 0 10px 6px -6px #777;
+  margin-bottom: 10px;
+}
+
+.form-drop1{
+  width:380px;
+  background-color: #5893d4;
+  margin-top:20px;
+  border-radius: 30px;
+  padding-top:10px;
+  padding-bottom:10px;
+  box-shadow: 0 10px 6px -6px #777;
+  margin-bottom: 30px;
+}
+
+.form-drop2{
+  width:380px;
+  background-color: #ffffff;
+  margin-top:20px;
+  border-radius: 30px;
+  padding-top:10px;
+  padding-bottom:10px;
+  box-shadow: 0 10px 6px -6px #777;
+  margin-bottom: 10px;
+  border: 1px;
+}
+
 }
 
 #but2{
