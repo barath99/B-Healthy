@@ -1,4 +1,4 @@
-
+  
   <html>
   <head>
       <meta charset="utf-8">
@@ -73,7 +73,7 @@
         <div class="column left" >
 
           <div >
-            <div id="form3" class="form-drop1" class="header">
+            <form id="form3" class="form-drop1" class="header">
             <div class="set">
               <label>Food Name</label>
             <input type="text" id="food" class="input1" placeholder="Food Name"><br />
@@ -93,8 +93,8 @@
               <label>Proteins (gms)</label>
             <input type="number" id="protein" class="input1" placeholder="Proteins">
             </div>
-            </div>
             <button onclick="addintake()" id="bluebtn" class="btn" type="button">Add to Consumed</button>
+            </form>
           </div>
 
         </div>
@@ -110,7 +110,9 @@
         </div>
       </div>
       <center>
-        <div id="clock"></div>
+        <div id="clock">
+          <h2 id="water-drank"></h2>
+        </div>
       </center>
       <center>
         <button onclick="logout()" id="redbtn" class="btn" type="button">Logout</button>
@@ -118,3 +120,4 @@
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
+
