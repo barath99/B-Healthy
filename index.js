@@ -210,8 +210,8 @@ function startTime() {
     t = setTimeout(startTime, 500);
   }
 
-  //if (s=="00")
-//  alert("You should drink 0.125 L within this hour!");
+if (s=="00")
+  alert("You should drink 0.125 L within this hour!");
 }
 function checkTime(i) {
   if (i < 10) {i = "0" + i;}  // add zero in front of numbers < 10
